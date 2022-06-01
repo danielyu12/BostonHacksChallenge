@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import '../Task/Task.css';
 
 const task = (props) => {
   const handleRemove = () => {
@@ -17,7 +18,7 @@ const task = (props) => {
     window.location.reload();
   };
   return (
-    <div>
+    <div className="individual-task">
       <p>{props.task}</p>
       <button onClick={handleRemove}>Remove</button>
     </div>

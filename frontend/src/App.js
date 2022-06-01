@@ -2,7 +2,7 @@ import './App.css';
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import CreateTaskForm from '../src/components/CreateTaskForm/CreateTaskForm.js';
-import Tasks from '../src/components/tasks/tasks.js';
+import Tasks from './components/Tasks/Tasks.js';
 
 function App() {
   const [getMessage, setGetMessage] = useState({});
@@ -22,7 +22,6 @@ function App() {
   return (
     <div className="App">
       <div>
-        <h3>Dababy</h3>
         <CreateTaskForm />
         <Tasks />
       </div>

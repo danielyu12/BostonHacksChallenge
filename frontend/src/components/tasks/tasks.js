@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import Task from '../task/task.js';
+import Task from '../Task/Task.js';
+import './Tasks.css';
 import axios from 'axios';
 
-const Tasks = (props) => {
+const Tasks = () => {
   useEffect(() => {
     axios
       .get('http://localhost:5000/update')
